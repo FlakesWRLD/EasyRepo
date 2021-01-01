@@ -108,19 +108,19 @@ if __name__ == "__main__" :
     #incoming_youtube_dl_handler = MessageHandler(
         #incoming_youtube_dl_f,
         #filters=Filters.command([f"{YTDL_COMMAND}"]) & Filters.chat(chats=AUTH_CHANNEL)
-    )
+    #)
     #app.add_handler(incoming_youtube_dl_handler)
     #
     #incoming_youtube_playlist_dl_handler = MessageHandler(
         #g_yt_playlist,
         #filters=Filters.command([f"{PYTDL_COMMAND_G}"]) & Filters.chat(chats=AUTH_CHANNEL)
-    )
+    #)
     #app.add_handler(incoming_youtube_playlist_dl_handler)
     #
     status_message_handler = MessageHandler(
         status_message_f,
         filters=Filters.command([f"{STATUS_COMMAND}"]) & Filters.chat(chats=AUTH_CHANNEL)
-    )
+    #)
     app.add_handler(status_message_handler)
     #
     cancel_message_handler = MessageHandler(
